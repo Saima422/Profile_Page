@@ -142,12 +142,16 @@ header{
 }
 
 .banner-btn > a{
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* border: 2px solid white; */
+    padding: 10px 0px;
     font-size: 20px; 
     color: white;
     text-decoration: none;
     text-align: center;
-    margin: 10px 23px;
+    /* margin: 10px 23px; */
 }
 
 .banner-btn:hover{
@@ -301,6 +305,7 @@ hr{
 }
 
 .skill-item{
+    /* border: 1px solid white; */
     width: 40%;
     margin: 30px;
     padding: 20px;
@@ -311,6 +316,8 @@ hr{
 @media (max-width: 750px) {
     .skill-item{
         width: 80%;
+        /* display: flex;
+        flex-wrap: wrap; */
     }
 
     .skill-item h2{
@@ -338,9 +345,14 @@ hr{
     padding-bottom: 20px;
 }
 
-.skill-item > a{
-    margin: 25px 10px 10px;
-    padding-right: 20px;
+.skill-item a{
+    /* border: 2px solid green; */
+    text-align: center;
+    /* margin: 0px 10px 10px; */
+    padding: 10px 10px 10px 10px;
+    line-height: 4;
+    /* margin-top: 30px; */
+    /* padding-right: 20px; */
     color: #E84B53;
     transition: color 1s ease;
     text-decoration: none;
