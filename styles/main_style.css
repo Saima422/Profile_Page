@@ -1,0 +1,480 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1;
+    /* font-family: 'Roboto Slab', serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+header{
+    width:100%;
+    position: sticky;
+    top: 0; 
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    background-color: #1F2235;
+    align-items: center;
+}
+
+.container{
+    width:100%;
+    background-color: #1F2235;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid green;     */
+}
+
+.hidden{
+    /* width: 20px; */
+    display: none;
+    
+    /* padding-right: 20px; */
+}
+
+.hidden > i{
+    color: white;
+    margin-left: -50px;
+}
+
+/* make logo responsive */
+.nav-logo{
+    margin: 5px 5px 5px 5px ;
+    width: 150px;
+    height: 50px;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid white; */
+    width: 50vw;
+    /* border: 2px solid white; */
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color .5s linear;
+}
+
+.nav-link:hover{
+    color: #E84B53;
+}
+
+.cta{
+    border: 2px solid #E84B53;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    transition: background-color 1s ease;
+}
+
+.cta:hover{
+    background-color: #E84B53;
+    color:white;
+}
+
+/* make banner responsive on resizing */
+.banner{
+    background-color: #24263B;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.banner > img{
+    width:30%;
+}
+
+.banner-content{
+    width: 45vw;
+    color: white;
+    margin: auto 0;
+    
+}
+
+.banner-title{
+    font-size: 4rem;
+    padding: 50px;
+}
+
+.banner-text{
+    font-size: 2rem;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.banner-content > p > a{
+    text-decoration: none;
+    color: #E84B53;
+    transition: color .5s linear;
+}
+
+.banner-content > p > a:hover{
+    color: white;
+}
+
+.banner-img{
+    width: 25vw;
+    margin-left: -30vw;
+}
+
+.banner-btn{
+    width: 170px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 30px;
+    background-color: #24263B;
+    border: 2px solid #E84B53;
+    margin: 40px 50px;
+    transition: background-color .5s ease;
+}
+
+.banner-btn > a{
+    display: inline-block;
+    font-size: 20px; 
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 23px;
+}
+
+.banner-btn:hover{
+    background-color: #E84B53;
+}
+
+@media (max-width: 1137px) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner-content{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .banner-img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .hidden{
+        display: block;  
+        /* margin-right: 5px; */
+    }
+
+    .nav-link{
+        display: none;
+    }
+  }
+
+
+
+/* Mrs Saint Delafield */
+
+/* services section */
+.services{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 0 10px;
+    background-color: #1F2235;
+}
+
+.services > p{
+    color: #E84B53;
+}
+
+.services > h1{
+    margin: 10px 0 0;
+    color: white;
+}
+
+.service-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.service-item{
+    max-width: 350px;
+    min-height: 300px;
+    margin: 30px 0;
+    padding: 40px;
+    background-color: #23263A;
+    color: white;
+    transition: background-color 1s ease;
+}
+
+.service-item p{
+    font-size: 1.2rem;
+}
+
+.service-item:hover{
+    background-color: #343957cb;
+}
+
+.service-item > i{
+    color: #E84B53;
+    transition: color 1s ease;
+}
+
+.service-item > i:hover{
+    color: white;
+}
+
+.service-item > h2{
+    margin: 25px 0;
+}
+
+/* aboutme / my journey */
+.aboutme-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #23263A;
+    color: white;
+}
+
+.aboutme-container > p{
+    width: 80vw;
+    /* padding: 10px 0; */
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+.myjourney{
+    margin-top: 40px;
+}
+
+hr{
+    width: 20%;
+    margin-top: 40px;
+    height: 5px;
+    background-color: #E84B53;
+    border: none;
+}
+
+/* skills */
+.skills{
+    width: 100%;
+    background-color: #1F2235;
+}
+
+.skills > h1{
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
+
+/* .skills a{
+    text-decoration: none;
+    color:#;
+} */
+
+.skill-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto 0px;
+    justify-content: space-around;
+}
+
+.skill-item{
+    width: 40%;
+    margin: 30px;
+    padding: 20px;
+    background-color: #23263A;
+    transition: background-color 1s ease;
+}
+
+@media (max-width: 750px) {
+    .skill-item{
+        width: 80%;
+    }
+
+    .skill-item h2{
+        text-align: center;
+    }
+
+    .skill-item a{
+        margin-right: 50px;
+        display: block;
+        width: 100%;
+        /* padding-bottom: 50px; */
+    }
+
+    .contact p{
+        width: 80%;
+    }
+}
+
+.skill-item:hover{
+    background-color: #343957cb;
+}
+
+.skill-item > h2{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.skill-item > a{
+    margin: 25px 10px 10px;
+    padding-right: 20px;
+    color: #E84B53;
+    transition: color 1s ease;
+    text-decoration: none;
+}
+
+.skill-item > a:hover{
+    color: white;
+}
+
+/* contact me */
+/* make responsive */
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F2235;
+    color: white;
+}
+
+.contact > h1{
+    margin: 30px 0 20px;
+}
+
+.contact > p{
+    text-align: center;
+}
+
+.social-icons{
+    margin: 30px 0;
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.social-icons > i{
+    border: 2px solid #E84B53;
+    color: white;
+    display: block;
+    padding: 12px;
+    border-radius: 100%;
+    transition: color 1s ease,border 1s ease;
+}
+
+.social-icons > i:hover{
+    color: #E84B53;
+    border: 2px solid white;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    padding: 6px;
+    background-color: #23263A;
+}
+
+.footer > p{
+    /* width: 10%; */
+    /* margin: 0 auto;  */
+    text-align: center;
+    color: white;
+}
+
+
+/* projects */
+.project-main-container{
+    width: 100%;
+    padding: 60px 30px;
+    background-color: #23263A;
+}
+
+.project-main-container h1{
+    text-align: center;
+    color: white;
+    margin: 0px 0px 20px;
+}
+
+.projects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.project-container{
+    width: 400px;
+    text-align: justify;
+    height: auto;
+    padding: 30px;
+    background-color: #1F2235;
+    margin: 15px 20px;
+}
+
+.project-container p{
+    font-size: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10px;
+}
+
+.project-image >img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-container > h1{
+    padding: 10px 0px 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #E84B53;
+    transition: color 1s ease;
+}
+
+.project-container > h1:hover{
+    color: white;
+}
+
+@media (max-width: 940px) {
+    .project-container{
+        width: 350px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 460px) {
+    .project-container{
+        width: 400 px;
+        margin:5px;
+    }
+}
